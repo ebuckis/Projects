@@ -6,7 +6,7 @@
 /*   By: kcabus <marvin@le-101.fr>                  +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:27:54 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/20 15:25:59 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/04 16:30:55 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -40,7 +40,7 @@ char			**ft_strsplit(char const *s, char c)
 		return (NULL);
 	len = ft_strlen(s);
 	nb_mot = cpt_mot(s, c);
-	tab = (char **)malloc(sizeof(char *) * nb_mot + 1);
+	tab = (char **)malloc(sizeof(char *) * (nb_mot + 1));
 	if (tab == NULL)
 		return (NULL);
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/23 09:03:33 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/05/31 14:16:57 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/04 17:00:58 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -71,7 +71,7 @@ void				ft_echo(t_mini *m);
 void				ft_env(t_mini *m);
 void				ft_setenv(t_mini *m, t_env *l);
 t_env				*ft_add_env(t_env *l, char *name, char *val);
-void				ft_unsetenv(t_mini *m, t_env *l);
+void				ft_unsetenv(t_mini *m);
 t_env				*ft_malloc_env(char *s);
 void				ft_print_env(t_env *l);
 void				ft_free(t_mini *m);

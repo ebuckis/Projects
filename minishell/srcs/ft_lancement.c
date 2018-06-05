@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/05/30 11:45:24 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/05/31 14:17:23 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/04 17:05:24 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -50,7 +50,7 @@ static int	ft_verif_builtin(t_mini *m, t_env *l)
 	else if (ft_strcmp(m->arg[0], "setenv") == 0)
 		ft_setenv(m, l);
 	else if (ft_strcmp(m->arg[0], "unsetenv") == 0)
-		ft_unsetenv(m, l);
+		ft_unsetenv(m);
 	else if (ft_strcmp(m->arg[0], "env") == 0)
 		ft_env(m);
 	else

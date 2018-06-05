@@ -6,40 +6,41 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/05/29 12:14:00 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/05/31 13:46:57 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 09:51:18 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-static void		ft_add_suite(t_env *new, int i, char *s)
+static void		ft_add_suite(char *s, t_env *l, int n, char *name)
 {
-	if (i == 1)
+	t_env		*new;
+	t_env		*tmp;
+
+	new = l;
+	while (new && !(ft_strncmp(name, new->env, n) == 0 && new->env[n] == '='))
 	{
-		free(new->next->env);
-		new->next->env = s;
+		tmp = new;
+		new = new->next;
 	}
-	if (i == 2)
+	if (new != NULL)
 	{
-		new = ft_malloc_env(s);
-		free(s);
+		free(new->env);
+		new->env = s;
 	}
 	else
 	{
-		new->next = ft_malloc_env(s);
+		tmp->next = ft_malloc_env(s);
 		free(s);
 	}
 }
 
 t_env			*ft_add_env(t_env *l, char *name, char *val)
 {
-	t_env		*new;
 	char		*s;
 	int			n;
 
-	if (!name)
-		return (l);
 	n = ft_strlen(name);
 	if (!(s = ft_strjoin(name, "=")))
 		return (l);
@@ -52,11 +53,7 @@ t_env			*ft_add_env(t_env *l, char *name, char *val)
 		free(s);
 		return (l);
 	}
-	new = l;
-	while (new->next && !(ft_strncmp(name, new->next->env, n) == 0
-		&& new->next->env[n] == '='))
-		new = new->next;
-	new->next ? (ft_add_suite(new, 1, s)) : (ft_add_suite(new, 0, s));
+	ft_add_suite(s, l, n, name);
 	return (l);
 }
 
