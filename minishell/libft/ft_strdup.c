@@ -6,13 +6,11 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:24:26 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/04 18:19:16 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:10:25 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

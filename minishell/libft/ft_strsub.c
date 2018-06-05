@@ -6,14 +6,12 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:28:12 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/05 09:58:01 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:15:52 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdlib.h>
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {

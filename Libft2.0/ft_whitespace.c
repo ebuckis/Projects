@@ -6,12 +6,12 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/05/31 09:06:03 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/05/31 13:26:54 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:15:14 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "libft.h"
 
 static char	*ft_transforme_s(char *s, char *ret)
 {

@@ -6,13 +6,11 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:27:54 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/04 16:30:24 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:15:41 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int		ft_len_word(const char *s, size_t index, char c)

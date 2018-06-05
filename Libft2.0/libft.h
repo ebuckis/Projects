@@ -3,18 +3,24 @@
 /*                                                              /             */
 /*   libft.h                                          .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kcabus <marvin@le-101.fr>                  +:+   +:    +:    +:+     */
+/*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:28:59 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/01/23 17:12:52 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:42:16 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define BUFF_SIZE_GNL 4016
 # include <string.h>
+# include <stddef.h>
+# include <stdlib.h>
+# include <stddef.h>
 # include <unistd.h>
+# include <sys/uio.h>
 
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
@@ -89,5 +95,7 @@ int				ft_sqrt(int n);
 int				ft_isprime(int n);
 int				cpt_mot(const char *s, char c);
 int				get_next_line(const int fd, char **line);
+int				ft_get_line(const int fd, char **line);
+char			*ft_whitespace(char *s);
 
 #endif

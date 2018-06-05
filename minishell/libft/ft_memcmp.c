@@ -3,15 +3,14 @@
 /*                                                              /             */
 /*   ft_memcmp.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kcabus <marvin@le-101.fr>                  +:+   +:    +:    +:+     */
+/*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:18:30 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/24 08:18:32 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:08:50 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)

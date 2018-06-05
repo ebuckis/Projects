@@ -3,16 +3,15 @@
 /*                                                              /             */
 /*   ft_itoa.c                                        .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kcabus <marvin@le-101.fr>                  +:+   +:    +:    +:+     */
+/*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:16:06 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/24 08:16:08 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:07:21 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static char	*ft_attrib(long int n1, int i, char *s, int n2)
 {

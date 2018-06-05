@@ -6,7 +6,7 @@
 #    By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/04/06 14:53:11 by kcabus       #+#   ##    ##    #+#        #
-#    Updated: 2018/05/31 09:54:24 by kcabus      ###    #+. /#+    ###.fr      #
+#    Updated: 2018/06/05 11:39:27 by kcabus      ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -32,7 +32,6 @@ OBJ_NAME = $(N_SRCS:.c=.o)
 N_SRCS =	main.c				\
 			ft_parse.c			\
 			ft_save_env.c		\
-			ft_whitespace.c		\
 			ft_lancement.c		\
 			ft_env.c			\
 			ft_setenv.c			\

@@ -3,16 +3,14 @@
 /*                                                              /             */
 /*   ft_strjoin_del.c                                 .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kcabus <marvin@le-101.fr>                  +:+   +:    +:    +:+     */
+/*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/26 14:48:12 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/02/06 12:25:16 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:10:33 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin_del(char const *s1, char const *s2)
