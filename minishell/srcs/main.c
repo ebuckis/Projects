@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/05/29 10:26:07 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/04 17:51:35 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/05 11:53:26 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -24,6 +24,8 @@ int			main(int argc, char **argv, char **env)
 	t_mini	*m;
 	char	*line;
 
+	if (argc > 1 && argv[1])
+		return (0);
 	m = (t_mini *)malloc(sizeof(t_mini));
 	m->save_env = ft_cpy_env(env);
 	while (1)
@@ -42,4 +44,5 @@ int			main(int argc, char **argv, char **env)
 		free(line);
 	}
 	ft_free(m);
+	return (0);
 }
