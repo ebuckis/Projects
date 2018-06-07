@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:28:59 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/07 13:00:59 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/07 14:03:28 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -103,6 +103,7 @@ typedef struct	s_parse
 	int			i;
 	int			j;
 }				t_parse;
+char			**ft_parser(char *s);
 t_parse			*ft_init_parse(char *s);
 int				ft_realloc(t_parse *p, char *s);
 char			*ft_suite_line(t_parse *p, char *s, int i);

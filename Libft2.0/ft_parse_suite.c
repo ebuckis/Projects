@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/06/07 12:37:54 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/07 13:00:18 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/07 14:30:27 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -21,7 +21,7 @@ t_parse		*ft_init_parse(char *s)
 	p = (t_parse *)malloc(sizeof(t_parse));
 	if (!p)
 		return (NULL);
-	p->str = ft_memalloc(ft_strlen(s));
+	p->str = ft_strnew(ft_strlen(s));
 	if (!p->str)
 		return (NULL);
 	p->i = 0;
@@ -35,7 +35,7 @@ int			ft_realloc(t_parse *p, char *s)
 	int		n;
 
 	n = ft_strlen(s);
-	cpy = ft_memalloc(n);
+	cpy = ft_strnew(n);
 	cpy = ft_strcpy(cpy, p->str);
 	free(p->str);
 	p->str = cpy;

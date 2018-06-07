@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/06/01 15:16:59 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/07 13:02:29 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/07 14:33:43 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -102,7 +102,9 @@ char		*ft_str_parser(char *s)
 			ft_end_while(p, s);
 	}
 	free(s);
-	return (p->str);
+	s = p->str;
+	free(p);
+	return (s);
 }
 
 char		**ft_parser(char *s)
