@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:28:59 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/05 11:42:16 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/07 14:03:28 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -97,5 +97,16 @@ int				cpt_mot(const char *s, char c);
 int				get_next_line(const int fd, char **line);
 int				ft_get_line(const int fd, char **line);
 char			*ft_whitespace(char *s);
+typedef struct	s_parse
+{
+	char		*str;
+	int			i;
+	int			j;
+}				t_parse;
+char			**ft_parser(char *s);
+t_parse			*ft_init_parse(char *s);
+int				ft_realloc(t_parse *p, char *s);
+char			*ft_suite_line(t_parse *p, char *s, int i);
+void			ft_end_while(t_parse *p, char *s);
 
 #endif
