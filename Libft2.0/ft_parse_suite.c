@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/06/07 12:37:54 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/07 14:30:27 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/08 09:39:37 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -16,7 +16,6 @@
 t_parse		*ft_init_parse(char *s)
 {
 	t_parse	*p;
-	int		n;
 
 	p = (t_parse *)malloc(sizeof(t_parse));
 	if (!p)
@@ -45,7 +44,6 @@ int			ft_realloc(t_parse *p, char *s)
 char		*ft_suite_line(t_parse *p, char *s, int i)
 {
 	char	*tmp;
-	char	*cpy;
 
 	tmp = NULL;
 	if (i == 0)

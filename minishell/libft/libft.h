@@ -6,7 +6,7 @@
 /*   By: kcabus <kcabus@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 08:28:59 by kcabus       #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/07 14:03:28 by kcabus      ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/06/08 09:38:26 by kcabus      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -95,7 +95,6 @@ int				ft_sqrt(int n);
 int				ft_isprime(int n);
 int				cpt_mot(const char *s, char c);
 int				get_next_line(const int fd, char **line);
-int				ft_get_line(const int fd, char **line);
 char			*ft_whitespace(char *s);
 typedef struct	s_parse
 {
