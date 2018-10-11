@@ -1,1 +1,0 @@
-ifconfig en1 | awk ' NR==2 {print $2}'

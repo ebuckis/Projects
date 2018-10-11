@@ -1,1 +1,0 @@
-netstat -nr | awk ' NR==5 {print $2}'
